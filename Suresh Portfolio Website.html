@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Suresh R - SAP Consultant | Portfolio showcasing SAP, SQL, and Python expertise">
+  <title>Suresh R | SAP Consultant Portfolio</title>
+  <link rel="stylesheet" href="S.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Suresh<span>R</span></a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#" onclick="openContactModal(); return false;">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="greeting">&#128075; Hello, I'm</p>
+        <h1>Suresh <span class="highlight">R</span></h1>
+        <h2 class="typewriter" id="typewriter"></h2>
+        <p class="hero-desc">
+          I design powerful business solutions using <strong>SAP</strong>, <strong>SQL</strong>, and
+          <strong>Python</strong>.
+          Turning complex business processes into seamless digital workflows.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToSection('projects')">
+            <i class="fas fa-rocket"></i> View Projects
+          </button>
+          <button class="btn-secondary" onclick="openContactModal()">
+            <i class="fas fa-envelope"></i> Contact Me
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="3">0</span>+
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="5">0</span>+
+            <span class="stat-label">Skills</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="100">0</span>%
+            <span class="stat-label">Passion</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <div class="image-ring"></div>
+          <div class="image-ring ring-2"></div>
+          <img src="D:\Protfolio\Suresh R.jpeg" alt="Suresh R - SAP Consultant">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="section-container">
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      <p class="section-subtitle">Technologies & tools I work with</p>
+      <div class="skills-grid">
+        <div class="skill-card" style="--delay: 0.1s">
+          <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+          <h3>SAP MM/PP</h3>
+          <p>Procure-to-Pay, Material Management, Production Planning</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90%"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.2s">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>SQL</h3>
+          <p>Advanced queries, data analysis, reporting & optimization</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85%"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.3s">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <h3>Python</h3>
+          <p>Automation scripts, data processing, workflow optimization</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.4s">
+          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Data Analysis</h3>
+          <p>Business insights, dashboards, and KPI reporting</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85%"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.5s">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript — building modern web apps</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75%"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.6s">
+          <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+          <h3>Business Process</h3>
+          <p>ERP configuration, workflow design, process optimization</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="88%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="section-container">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      <p class="section-subtitle">Real-world solutions I've built</p>
+      <div class="projects-grid">
+        <div class="project-card" onclick="openProjectModal(0)">
+          <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>SAP Procurement</h3>
+          <p>Complete Procure-to-Pay lifecycle including PR, PO, GR, and Invoice Verification.</p>
+          <span class="project-tag">SAP MM</span>
+          <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="project-card" onclick="openProjectModal(1)">
+          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>SQL Data Analysis</h3>
+          <p>Business insights using advanced SQL queries, joins, and aggregation techniques.</p>
+          <span class="project-tag">SQL</span>
+          <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="project-card" onclick="openProjectModal(2)">
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <h3>Python Automation</h3>
+          <p>Automation scripts to improve business efficiency and eliminate repetitive tasks.</p>
+          <span class="project-tag">Python</span>
+          <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-socials">
+        <a href="https://github.com/Sureshjhon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/suresh-raja-31374622a" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="mailto:suresh200308@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 Suresh R. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="S.JS"></script>
+</body>
+
+</html>
