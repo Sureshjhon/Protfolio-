@@ -149,6 +149,26 @@ function openContactModal() {
   document.body.style.overflow = "hidden";
 }
 
+function openExperienceModal() {
+  const modal = document.getElementById("modal");
+  const body = document.getElementById("modal-body");
+
+  body.innerHTML = `
+    <h2><i class="fas fa-briefcase" style="color:#f59e0b; margin-right:10px;"></i> SAP Consultant</h2>
+    <h4 style="color: #f59e0b; font-size: 16px; margin-bottom: 16px;">VCORE TECHNOLOGIES, COIMBATORE</h4>
+    <p style="font-size: 15px; line-height: 1.7;">Leveraged expertise in SAP processes, advanced queries, and business workflow optimizations to deliver tailored solutions. Key achievements & responsibilities:</p>
+    <ul style='padding-left: 20px; margin-top: 12px; color: #9090a0;'>
+      <li style="margin-bottom: 8px;">Configured and optimized end-to-end Procure-to-Pay lifecycle.</li>
+      <li style="margin-bottom: 8px;">Provided deep-dive optimization into Material Management modules.</li>
+      <li style="margin-bottom: 8px;">Designed and automated business workflows to eliminate redundancies.</li>
+      <li style="margin-bottom: 8px;">Facilitated robust tracking of procurement and continuous support pipelines.</li>
+    </ul>
+  `;
+
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
 function closeModal() {
   document.getElementById("modal").classList.add("hidden");
   document.body.style.overflow = "";
